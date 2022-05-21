@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.front-div,
+.back-div,
+#flip-container-bt {
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    right: 40px;
+    top: 40px;
+    bottom: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* esconde o verso durante a animação */
+.front-div,
+.back-div {
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+/* vira os containers frente e verso quando o mouse passa em cima */
+/* #flip-container-bt:hover {
+    transform: rotateY(180deg);
+} */
+
+.invisivel {
+    transform: rotateY(180deg);
+}
+
+/* verso inicialmente escondido */
+.back-div {
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.p-back-div,
+#texto-div{
+    position: absolute;
+    top: 72px;
+    left: 25px;
+    right: 25px;
+    margin: auto;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #495057;
+    text-align: justify;
+}
+
+#copiar-btn{
+    position: absolute;
+    background: #D8DFE8;
+    color: #0A3871;
+    margin-right: 24px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-size: 25px;
+    bottom: 32px;
+    right: 32px;
+    left: 32px;
+}

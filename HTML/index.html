@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/flipCard.css">
+    <title>Decodificador - Magno</title>
+</head>
+
+<body>
+    <main>
+        <div id="container">
+            <div id="texto-input">
+                <!-- <textarea wrap="hard" placeholder="Digite seu Texto"></textarea> -->
+                <textarea wrap="hard" id="placeholder-id"></textarea>
+            </div>
+            <!-- <div id="texto-response"> -->
+            <div id="flip-container-bt">
+                <div class="front-div">
+                    <div id="img-div">
+                        <div id="img-background"></div>
+                        <div id="img-text">
+                            <h1>Nenhuma mensagem encontrada</h1>
+                            <h3>Digite o texto que você deseja criptografar ou descriptografar</h3>
+                        </div>
+                    </div>
+                    <div id="texto-div">
+                        
+                    </div>
+                </div>
+
+
+                <div class="back-div">
+                    <p class="p-back-div">
+
+                    </p>
+                    <button id="copiar-btn">Copiar</button>
+                </div>
+            </div>
+
+
+
+            <div id="button-btn">
+                <button id="criptografar-btn">Criptografar</button>
+                <button id="descriptografar-btn">Descriptografar</button>
+            </div>
+        </div>
+        <script src="/JS/criptografarText.js"></script>
+        <script src="/JS/descriptografarText.js"></script>
+        <script src="/JS/placeHolder.js"></script>
+        <script src="/JS/textAreaSize.js"></script>
+        <script src="/JS/criptografarText.js"></script>
+        <script src="/JS/insertTextFlip.js"></script>
+        <script src="/JS/copiaText.js"></script>
+    </main>
+    <footer>
+
+        <img src="/IMG/imgLogo.png" class="imagem" alt="Logo Magno Costa">
+        <p class="copyright">&copy; Copyright Magno Costa Challenge Alura I - 2022</p>
+    </footer>
+
+</body>
+
+</html>
