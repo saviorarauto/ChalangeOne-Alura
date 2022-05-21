@@ -54,7 +54,7 @@ textarea::-webkit-scrollbar {
     height: 304px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
-    background: url("/IMG/High\ quality\ products\ 1\ 1.svg") no-repeat;
+    background: url("../IMG/imgSearch.png") no-repeat;
     top: 243px;
     left: 32px;
 }
